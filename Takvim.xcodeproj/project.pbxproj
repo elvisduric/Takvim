@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D71695932CA8536400F52DB6 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71695922CA8535F00F52DB6 /* NotificationManager.swift */; };
+		D71695952CA8630300F52DB6 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71695942CA8630300F52DB6 /* RoundedCorners.swift */; };
+		D71695992CAB506400F52DB6 /* vazni_datumi.json in Resources */ = {isa = PBXBuildFile; fileRef = D71695982CAB506400F52DB6 /* vazni_datumi.json */; };
+		D716959B2CAB51EB00F52DB6 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D716959A2CAB51EB00F52DB6 /* EventListView.swift */; };
+		D7261CAF2C978CCB007CD4F1 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7261CAE2C978CCB007CD4F1 /* PrayerTimes.swift */; };
+		D7261CB02C978E0A007CD4F1 /* namaska_vremena.json in Resources */ = {isa = PBXBuildFile; fileRef = D752476A2C97821E00443FAB /* namaska_vremena.json */; };
+		D75247412C97818100443FAB /* TakvimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75247402C97818100443FAB /* TakvimApp.swift */; };
+		D75247432C97818100443FAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75247422C97818100443FAB /* ContentView.swift */; };
+		D75247452C97818300443FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75247442C97818300443FAB /* Assets.xcassets */; };
+		D75247482C97818300443FAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75247472C97818300443FAB /* Preview Assets.xcassets */; };
+		D75247522C97818400443FAB /* TakvimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75247512C97818400443FAB /* TakvimTests.swift */; };
+		D752475C2C97818400443FAB /* TakvimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752475B2C97818400443FAB /* TakvimUITests.swift */; };
+		D752475E2C97818400443FAB /* TakvimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752475D2C97818400443FAB /* TakvimUITestsLaunchTests.swift */; };
+		D7562DBB2CADF682001B654E /* ezan.wav in Resources */ = {isa = PBXBuildFile; fileRef = D7562DBA2CADF682001B654E /* ezan.wav */; };
+		D76C569F2CB02DE1001C2C99 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C569E2CB02DE1001C2C99 /* CalendarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D752474E2C97818400443FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D75247352C97818100443FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D752473C2C97818100443FAB;
+			remoteInfo = Takvim;
+		};
+		D75247582C97818400443FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D75247352C97818100443FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D752473C2C97818100443FAB;
+			remoteInfo = Takvim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D71695922CA8535F00F52DB6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D71695942CA8630300F52DB6 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		D71695982CAB506400F52DB6 /* vazni_datumi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vazni_datumi.json; sourceTree = "<group>"; };
+		D716959A2CAB51EB00F52DB6 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		D7261CAE2C978CCB007CD4F1 /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		D752473D2C97818100443FAB /* Takvim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Takvim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75247402C97818100443FAB /* TakvimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakvimApp.swift; sourceTree = "<group>"; };
+		D75247422C97818100443FAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D75247442C97818300443FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75247472C97818300443FAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D752474D2C97818400443FAB /* TakvimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakvimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75247512C97818400443FAB /* TakvimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakvimTests.swift; sourceTree = "<group>"; };
+		D75247572C97818400443FAB /* TakvimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakvimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D752475B2C97818400443FAB /* TakvimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakvimUITests.swift; sourceTree = "<group>"; };
+		D752475D2C97818400443FAB /* TakvimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakvimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D752476A2C97821E00443FAB /* namaska_vremena.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = namaska_vremena.json; sourceTree = "<group>"; };
+		D7562DBA2CADF682001B654E /* ezan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ezan.wav; sourceTree = "<group>"; };
+		D76C569E2CB02DE1001C2C99 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D752473A2C97818100443FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D752474A2C97818400443FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75247542C97818400443FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D75247342C97818100443FAB = {
+			isa = PBXGroup;
+			children = (
+				D752473F2C97818100443FAB /* Takvim */,
+				D75247502C97818400443FAB /* TakvimTests */,
+				D752475A2C97818400443FAB /* TakvimUITests */,
+				D752473E2C97818100443FAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D752473E2C97818100443FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D752473D2C97818100443FAB /* Takvim.app */,
+				D752474D2C97818400443FAB /* TakvimTests.xctest */,
+				D75247572C97818400443FAB /* TakvimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D752473F2C97818100443FAB /* Takvim */ = {
+			isa = PBXGroup;
+			children = (
+				D76C569E2CB02DE1001C2C99 /* CalendarView.swift */,
+				D716959A2CAB51EB00F52DB6 /* EventListView.swift */,
+				D71695982CAB506400F52DB6 /* vazni_datumi.json */,
+				D71695942CA8630300F52DB6 /* RoundedCorners.swift */,
+				D71695922CA8535F00F52DB6 /* NotificationManager.swift */,
+				D75247402C97818100443FAB /* TakvimApp.swift */,
+				D75247422C97818100443FAB /* ContentView.swift */,
+				D75247442C97818300443FAB /* Assets.xcassets */,
+				D75247462C97818300443FAB /* Preview Content */,
+				D752476A2C97821E00443FAB /* namaska_vremena.json */,
+				D7261CAE2C978CCB007CD4F1 /* PrayerTimes.swift */,
+				D7562DBA2CADF682001B654E /* ezan.wav */,
+			);
+			path = Takvim;
+			sourceTree = "<group>";
+		};
+		D75247462C97818300443FAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D75247472C97818300443FAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D75247502C97818400443FAB /* TakvimTests */ = {
+			isa = PBXGroup;
+			children = (
+				D75247512C97818400443FAB /* TakvimTests.swift */,
+			);
+			path = TakvimTests;
+			sourceTree = "<group>";
+		};
+		D752475A2C97818400443FAB /* TakvimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D752475B2C97818400443FAB /* TakvimUITests.swift */,
+				D752475D2C97818400443FAB /* TakvimUITestsLaunchTests.swift */,
+			);
+			path = TakvimUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D752473C2C97818100443FAB /* Takvim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75247612C97818400443FAB /* Build configuration list for PBXNativeTarget "Takvim" */;
+			buildPhases = (
+				D75247392C97818100443FAB /* Sources */,
+				D752473A2C97818100443FAB /* Frameworks */,
+				D752473B2C97818100443FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Takvim;
+			productName = Takvim;
+			productReference = D752473D2C97818100443FAB /* Takvim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D752474C2C97818400443FAB /* TakvimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75247642C97818400443FAB /* Build configuration list for PBXNativeTarget "TakvimTests" */;
+			buildPhases = (
+				D75247492C97818400443FAB /* Sources */,
+				D752474A2C97818400443FAB /* Frameworks */,
+				D752474B2C97818400443FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D752474F2C97818400443FAB /* PBXTargetDependency */,
+			);
+			name = TakvimTests;
+			productName = TakvimTests;
+			productReference = D752474D2C97818400443FAB /* TakvimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D75247562C97818400443FAB /* TakvimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75247672C97818400443FAB /* Build configuration list for PBXNativeTarget "TakvimUITests" */;
+			buildPhases = (
+				D75247532C97818400443FAB /* Sources */,
+				D75247542C97818400443FAB /* Frameworks */,
+				D75247552C97818400443FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D75247592C97818400443FAB /* PBXTargetDependency */,
+			);
+			name = TakvimUITests;
+			productName = TakvimUITests;
+			productReference = D75247572C97818400443FAB /* TakvimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D75247352C97818100443FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D752473C2C97818100443FAB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D752474C2C97818400443FAB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D752473C2C97818100443FAB;
+					};
+					D75247562C97818400443FAB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D752473C2C97818100443FAB;
+					};
+				};
+			};
+			buildConfigurationList = D75247382C97818100443FAB /* Build configuration list for PBXProject "Takvim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D75247342C97818100443FAB;
+			productRefGroup = D752473E2C97818100443FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D752473C2C97818100443FAB /* Takvim */,
+				D752474C2C97818400443FAB /* TakvimTests */,
+				D75247562C97818400443FAB /* TakvimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D752473B2C97818100443FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7562DBB2CADF682001B654E /* ezan.wav in Resources */,
+				D7261CB02C978E0A007CD4F1 /* namaska_vremena.json in Resources */,
+				D75247482C97818300443FAB /* Preview Assets.xcassets in Resources */,
+				D71695992CAB506400F52DB6 /* vazni_datumi.json in Resources */,
+				D75247452C97818300443FAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D752474B2C97818400443FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75247552C97818400443FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D75247392C97818100443FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71695952CA8630300F52DB6 /* RoundedCorners.swift in Sources */,
+				D76C569F2CB02DE1001C2C99 /* CalendarView.swift in Sources */,
+				D716959B2CAB51EB00F52DB6 /* EventListView.swift in Sources */,
+				D75247432C97818100443FAB /* ContentView.swift in Sources */,
+				D7261CAF2C978CCB007CD4F1 /* PrayerTimes.swift in Sources */,
+				D71695932CA8536400F52DB6 /* NotificationManager.swift in Sources */,
+				D75247412C97818100443FAB /* TakvimApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75247492C97818400443FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75247522C97818400443FAB /* TakvimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75247532C97818400443FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D752475E2C97818400443FAB /* TakvimUITestsLaunchTests.swift in Sources */,
+				D752475C2C97818400443FAB /* TakvimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D752474F2C97818400443FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D752473C2C97818100443FAB /* Takvim */;
+			targetProxy = D752474E2C97818400443FAB /* PBXContainerItemProxy */;
+		};
+		D75247592C97818400443FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D752473C2C97818100443FAB /* Takvim */;
+			targetProxy = D75247582C97818400443FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D752475F2C97818400443FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D75247602C97818400443FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D75247622C97818400443FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Takvim/Preview Content\"";
+				DEVELOPMENT_TEAM = 439U6A8Q8Z;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Takvim;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.Takvim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D75247632C97818400443FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Takvim/Preview Content\"";
+				DEVELOPMENT_TEAM = 439U6A8Q8Z;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Takvim;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.Takvim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D75247652C97818400443FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.TakvimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Takvim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Takvim";
+			};
+			name = Debug;
+		};
+		D75247662C97818400443FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.TakvimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Takvim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Takvim";
+			};
+			name = Release;
+		};
+		D75247682C97818400443FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.TakvimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Takvim;
+			};
+			name = Debug;
+		};
+		D75247692C97818400443FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takvim.ba.TakvimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Takvim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D75247382C97818100443FAB /* Build configuration list for PBXProject "Takvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D752475F2C97818400443FAB /* Debug */,
+				D75247602C97818400443FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75247612C97818400443FAB /* Build configuration list for PBXNativeTarget "Takvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75247622C97818400443FAB /* Debug */,
+				D75247632C97818400443FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75247642C97818400443FAB /* Build configuration list for PBXNativeTarget "TakvimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75247652C97818400443FAB /* Debug */,
+				D75247662C97818400443FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75247672C97818400443FAB /* Build configuration list for PBXNativeTarget "TakvimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75247682C97818400443FAB /* Debug */,
+				D75247692C97818400443FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D75247352C97818100443FAB /* Project object */;
+}
