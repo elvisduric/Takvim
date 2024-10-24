@@ -4,6 +4,7 @@ import UserNotifications
 @main
 struct TakvimApp: App {
     init() {
+        UITabBar.appearance().tintColor = UIColor.black
         NotificationsManager.shared.loadNotificationPreferences()
         NotificationsManager.shared.requestNotificationPermission()
         clearPreviousNotificationsIfNeeded() // Clear previous notifications if app is updated

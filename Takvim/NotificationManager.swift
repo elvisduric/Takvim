@@ -108,8 +108,17 @@ class NotificationsManager {
         let content = UNMutableNotificationContent()
         content.title = "Takvim"
         content.body = "Nastupilo je vrijeme \(title) namaza"
-        let customSoundName = "ezan.wav"
-        content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: customSoundName))
+        
+        // Retrieve the selected sound from UserDefaults
+        let selectedSoundName = UserDefaults.standard.string(forKey: "notificationSound") ?? SoundOption.customSound.rawValue
+        print("Selected sound: \(selectedSoundName)")
+        
+        // Set the sound for the notification
+        if selectedSoundName == SoundOption.customSound.rawValue {
+            content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "ezan.wav")) // Use custom sound without the extension
+        } else {
+            content.sound = UNNotificationSound.default // Use the default sound
+        }
         
         // Add the notification icon attachment
         if let iconURL = Bundle.main.url(forResource: "MessageIcon", withExtension: "png") {

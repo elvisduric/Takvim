@@ -4,6 +4,7 @@ struct CalendarView: View {
     @Binding var isPresented: Bool
     @Binding var selectedDate: Date // Binding to the selected date
     @State var groupedDates: [String: [Date]] = [:] // Dictionary to hold dates grouped by month and year
+    var showCloseButton: Bool
 
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 7) // 7 columns for days of the week
     let calendar: Calendar = {
@@ -49,7 +50,11 @@ struct CalendarView: View {
                                             .onTapGesture {
                                                 // Set the selected date when tapped
                                                 selectedDate = calendar.date(bySettingHour: 12, minute: 0, second: 0, of: date)!
-                                                isPresented = false // Close the calendar after selecting a date
+                                                
+                                                // Only close if it's presented modally
+                                                if showCloseButton {
+                                                    isPresented = false
+                                                }
                                             }
                                     }
                                 }
@@ -59,12 +64,14 @@ struct CalendarView: View {
                     .frame(width: geometry.size.width * 0.8) // 80% of screen width
                 }
 
-                Button("Close") {
-                    isPresented = false
+                if showCloseButton {
+                    Button("Close") {
+                        isPresented = false
+                    }
+                    .padding()
+                    .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(.red)
                 }
-                .padding()
-                .font(.system(size: 20, weight: .regular))
-                .foregroundColor(.red)
             }
             .frame(width: geometry.size.width) // Full width of the screen
             .frame(height: geometry.size.height, alignment: .top) // This ensures the VStack takes full height and aligns to top
