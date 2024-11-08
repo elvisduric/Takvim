@@ -14,7 +14,7 @@ struct ContentView: View {
         TabView {
             MainContent()
                 .tabItem {
-                    Image(systemName: "clock")
+                    Image(systemName: "timer")
                     Text("Namaz")
                 }
             
@@ -26,7 +26,7 @@ struct ContentView: View {
             
             SettingsView()
                 .tabItem {
-                    Image(systemName: "gear")
+                    Image(systemName: "gearshape")
                     Text("Postavke")
                 }
         }

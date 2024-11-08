@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D71695932CA8536400F52DB6 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71695922CA8535F00F52DB6 /* NotificationManager.swift */; };
 		D71695952CA8630300F52DB6 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71695942CA8630300F52DB6 /* RoundedCorners.swift */; };
 		D71695992CAB506400F52DB6 /* vazni_datumi.json in Resources */ = {isa = PBXBuildFile; fileRef = D71695982CAB506400F52DB6 /* vazni_datumi.json */; };
-		D716959B2CAB51EB00F52DB6 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D716959A2CAB51EB00F52DB6 /* EventListView.swift */; };
 		D7261CAF2C978CCB007CD4F1 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7261CAE2C978CCB007CD4F1 /* PrayerTimes.swift */; };
 		D7261CB02C978E0A007CD4F1 /* namaska_vremena.json in Resources */ = {isa = PBXBuildFile; fileRef = D752476A2C97821E00443FAB /* namaska_vremena.json */; };
 		D73D74E52CCA601800106C62 /* MainContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73D74E42CCA601800106C62 /* MainContent.swift */; };
@@ -48,7 +47,6 @@
 		D71695922CA8535F00F52DB6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D71695942CA8630300F52DB6 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		D71695982CAB506400F52DB6 /* vazni_datumi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vazni_datumi.json; sourceTree = "<group>"; };
-		D716959A2CAB51EB00F52DB6 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		D7261CAE2C978CCB007CD4F1 /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
 		D73D74E42CCA601800106C62 /* MainContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContent.swift; sourceTree = "<group>"; };
 		D73D74E62CCA616700106C62 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -67,6 +65,10 @@
 		D7562DBA2CADF682001B654E /* ezan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ezan.wav; sourceTree = "<group>"; };
 		D76C569E2CB02DE1001C2C99 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D7D849372CCC06C500976631 /* lokacije */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = lokacije; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D752473A2C97818100443FAB /* Frameworks */ = {
@@ -116,11 +118,11 @@
 		D752473F2C97818100443FAB /* Takvim */ = {
 			isa = PBXGroup;
 			children = (
+				D7D849372CCC06C500976631 /* lokacije */,
 				D73D74E82CCA753B00106C62 /* SoundOption.swift */,
 				D73D74E62CCA616700106C62 /* SettingsView.swift */,
 				D73D74E42CCA601800106C62 /* MainContent.swift */,
 				D76C569E2CB02DE1001C2C99 /* CalendarView.swift */,
-				D716959A2CAB51EB00F52DB6 /* EventListView.swift */,
 				D71695982CAB506400F52DB6 /* vazni_datumi.json */,
 				D71695942CA8630300F52DB6 /* RoundedCorners.swift */,
 				D71695922CA8535F00F52DB6 /* NotificationManager.swift */,
@@ -174,6 +176,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D7D849372CCC06C500976631 /* lokacije */,
 			);
 			name = Takvim;
 			productName = Takvim;
@@ -295,7 +300,6 @@
 			files = (
 				D71695952CA8630300F52DB6 /* RoundedCorners.swift in Sources */,
 				D76C569F2CB02DE1001C2C99 /* CalendarView.swift in Sources */,
-				D716959B2CAB51EB00F52DB6 /* EventListView.swift in Sources */,
 				D73D74E72CCA616700106C62 /* SettingsView.swift in Sources */,
 				D75247432C97818100443FAB /* ContentView.swift in Sources */,
 				D73D74E52CCA601800106C62 /* MainContent.swift in Sources */,
